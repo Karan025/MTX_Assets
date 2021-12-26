@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Dynamic Forms using SLOTS">
+        <div class="slds-p-around_xx-small">
+            <div class="flex-container" style="display: flex;">
+                <c-contact>
+                    <h2 slot="heading" class="slds-text-heading_large">Will Smith</h2>
+                    <p slot="contactInfo">Website: https://willsmith.com</p>
+                    <p>This is the Slot without Name for Will Smith</p>
+                    <p slot="componentName" class="slds-align_absolute-center">
+                        <strong>contact.html</strong>
+                    </p>
+                </c-contact>
+                <c-contact>
+                    <h2 slot="heading" class="slds-text-heading_medium">Cristiano Ronaldo</h2>
+                    <p slot="contactInfo">Email: cronado@cr7.com</p>
+                    <p>This is the Slot without Name for Cristiano Ronaldo</p>
+                    <p slot="componentName" class="slds-align_absolute-center">
+                        <strong>contact.html</strong>
+                    </p>
+                </c-contact>
+                <c-contact>
+                    <h2 slot="heading" class="slds-text-heading_small">Chris Pratt</h2>
+                    <p slot="contactInfo">Phone: 09324579999</p>
+                    <p>This is the Slot without Name for Chris Pratt</p>
+                    <p slot="componentName" class="slds-align_absolute-center">
+                        <strong>contact.html</strong>
+                    </p>
+                </c-contact>
+            </div>
+        </div>
+    </lightning-card>
+</template>
